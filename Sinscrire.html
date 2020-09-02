@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>S'inscrire &mdash; Etudiant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/logo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/rangeslider.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-11 col-xl-4">
+            <h1 class="mb-0 site-logo"><a href="index.html" class=" text-white mb-0">CrocoCoder School<span
+                  class="text-primary">.</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-8 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                
+                <li class="active has-children">
+                  <a href="Sinscrire.html"><span>Inscription</span></a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="Sinscrire.html">Enseignant</a></li>
+                    <li><a href="Sinscrire.html">Etudiant</a></li>
+                  </ul>
+                </li>
+                <li><a href="connecter.html"><span>Connexion</span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/bg.jpg);" data-aos="fade"
+      data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center"><br>
+
+          <div class="col-md-10">
+
+            <div class="row justify-content-center mb-4">
+              <div class="col-md-10 text-center"> <br>
+                <h1 data-aos="fade-up" class="mb-5">inscrivez-vous <br> <span class="typed-words"></span></h1>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="site-section bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-5" data-aos="fade">
+              <div class="row form-group">
+
+                <div class="col-md-6">
+                  <label class="text-black" for="prenom">Prénom</label>
+                  <input type="text" id="prenom" class="form-control" placeholder="Ecrire votre Prénom...">
+                  <p id="prenomMsg" class="rouge"></p>
+                </div>
+
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="nom">Nom </label>
+                  <input type="text" id="nom" class="form-control" placeholder="Ecrire votre Nom...">
+                  <p id="nomMsg" class="rouge"></p>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="Ecrire votre Email...">
+                  <p id="emailMsg" class="rouge"></p>
+
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="mp">Mot de Passe</label>
+                  <input type="password" class="form-control text-black" id="mp" placeholder="Password ...">
+                  <p id='mpMsg' class="rouge"></p>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="confirmMp">Confirmer Mot de Passe</label>
+                  <input type="password" class="form-control text-black" id="confirmMp"
+                    placeholder="Confirm Password ...">
+                  <p id='confirmMpMsg' class="rouge"></p>
+                </div>
+              </div>
+
+
+
+              <div class=" marg form-group">
+                <label for="tel">Téléphone </label>
+                <input type="number" class="form-control" id="tel" placeholder="Tel ...">
+                <p id="telMsg" class="rouge"></p>
+              </div>
+
+              <div class=" marg form-group">
+                <label for="cin">Cin </label>
+                <input type="number" class="form-control" id="cin" placeholder="Cin ...">
+                <p id="cinMsg" class="rouge"></p>
+              </div>
+
+              <div class="marg form-group ">
+                <label for="classe">Classe </label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="classe" id="c1" value="0">
+                  <label class="form-check-label" for="c1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="classe" id="c2" value="1">
+                  <label class="form-check-label" for="c2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="classe" id="c3" value="2">
+                  <label class="form-check-label" for="c3">3</label>
+                </div>
+
+              </div>
+
+              <div class=" marg form-group">
+                <label class="text-black" for="typeUt">User Type</label>
+                <select id="typeUt" class="form-control">
+                  <option value="0">Enseignant</option>
+                  <option value="1">Etudiant</option>
+                </select>
+
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="date">Date De Naissance </label> <br>
+                    <input id="date" type="date" value="">
+                    <p id="dateMsg" class="rouge"></p>
+                    <p id="dateMsgv" class="vert"></p>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="ville">Ville </label>
+                    <select id="ville" class="custom-select">
+                      <option selected> choisir votre Ville</option>
+                      <option value="0">Ariana</option>
+                      <option value="1">Béja</option>
+                      <option value="2">Ben Arous</option>
+                      <option value="3">Bizerte</option>
+                      <option value="4">Gabes</option>
+                      <option value="5">Gafsa</option>
+                      <option value="6">Jendouba</option>
+                      <option value="7">Kairouan</option>
+                      <option value="8">Kasserine</option>
+                      <option value="9">Kebili</option>
+                      <option value="10">La Manouba</option>
+                      <option value="11">Le Kef</option>
+                      <option value="12">Mahdia</option>
+                      <option value="13">Médenine</option>
+                      <option value="15">Monastir</option>
+                      <option value="16">Nabeul</option>
+                      <option value="17">Sfax</option>
+                      <option value="18">Sidi Bouzid</option>
+                      <option value="19">Siliana</option>
+                      <option value="20">Sousse</option>
+                      <option value="21">Tataouine</option>
+                      <option value="22">Tozeur</option>
+                      <option value="23">Tunis</option>
+                      <option value="24">Zaghouan</option>
+
+                    </select>
+                  </div>
+
+                </div>
+
+                <div class="row form-group center">
+                  <div class="col-md-12">
+                    <input type="submit" value="S'inscrire" onclick=" inscrire()"
+                      class="btn btn-pill btn-primary btn-md text-white">
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="mt-5 block-cta-1 primary-overlay" style="background-image: url('images/bg.jpg')">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <h2 class="mb-3 mt-0 text-white">CrocoCoder</h2>
+              <p class="mb-0 text-white lead"> est la nouvelle académie de développement de compétences en Tunisie qui
+                assure la formation de profesionnels dans le domaine de l'IT. Nous formons toute personne voulant
+                intégrer
+                le monde de numérique</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                  <h2 class="footer-heading mb-4">Adresse </h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#"> Immeuble Yasmine Tower, Bloc B,
+                        1er étage, A 1-5, Centre Urbain Nord</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                  <h2 class="footer-heading mb-4">Email</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">contact@crococoder.com</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                  <h2 class="footer-heading mb-4">Téléphone</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">24 600 900</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mb-5 mb-lg-0 col-lg-3">
+                  <h2 class="footer-heading mb-4">Suivez Nous</h2>
+                  <a href="https://www.facebook.com/crococoder/" class="pl-0 pr-3"><span
+                      class="icon-facebook"></span></a>
+                  <a href="https://twitter.com/?lang=fr" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="https://www.instagram.com/crococoders/" class="pl-3 pr-3"><span
+                      class="icon-instagram"></span></a>
+                  <a href="https://www.linkedin.com/in/croco-coder-a75642194/" class="pl-3 pr-3"><span
+                      class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <h2 class="footer-heading mb-4">Accréditations</h2>
+              <p>
+                En plus d’être habilitée par le Ministère de l’Enseignement Supérieur et de la Recherche Scientifique
+                tunisien, la qualité de l’enseignement a été reconnue internationalement.</p>
+
+            </div>
+          </div>
+          <div class="row pt-5 mt-5">
+            <div class="col-12 text-md-center text-left">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Bienvenue Chez <i class="icon-heart text-danger" aria-hidden="true"></i> <a
+                  href="http://www.crococoder.com/" target="_blank">CrocoCoder</a>
+                <script>document.write(new Date().getFullYear());</script>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+
+    <br><br>
+    <script src="js/typed.js"></script>
+    <script>
+      var typed = new Typed('.typed-words', {
+        strings: ["C'est Gratuit"],
+        typeSpeed: 80,
+        backSpeed: 80,
+        backDelay: 4000,
+        startDelay: 1000,
+        loop: false,
+        showCursor: true
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
